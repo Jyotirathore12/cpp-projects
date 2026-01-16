@@ -43,7 +43,7 @@ bool isPrime(int n) {
 
 bool isEven(int n) {
     // TODO: check even or odd
-    return false;
+    return n%2==0;
 }
 
 bool isPalindrome(int n) {
@@ -65,4 +65,11 @@ void analyzeNumber(int n) {
     cout << "\nAnalysis Result:\n";
 
     // TODO: call all check functions
+     cout << "\nAnalysis Result:\n";
+
+    cout << "Even: " << (isEven(n) ? "Yes" : "No") << endl;
+    cout << "Prime: " << (isPrime(n) ? "Yes" : "No") << endl;
+    cout << "Palindrome: " << (isPalindrome(n) ? "Yes" : "No") << endl;
+    cout << "Armstrong: " << (isArmstrong(n) ? "Yes" : "No") << endl;
+    cout << "Perfect: " << (isPerfect(n) ? "Yes" : "No") << endl;
 }
